@@ -4,22 +4,10 @@
     <meta charset="utf-8" />
     <title>Content Manager</title>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script src="https://unpkg.com/@decap-cms/auth0-backend@^2.0.0/dist/auth0-backend.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.css" />
   </head>
   <body>
     <div style="color: red; font-size: 1.5em; text-align: center; margin-top: 2em;">TEST: admin/index.html loaded</div>
     <div id="nc-root"></div>
-    <script>
-      // Wait for both CMS and Auth0Backend to be available before registering
-      function registerAuth0Backend() {
-        if (window.CMS && window.Auth0Backend) {
-          window.CMS.registerBackend('auth0', window.Auth0Backend);
-        } else {
-          setTimeout(registerAuth0Backend, 100);
-        }
-      }
-      registerAuth0Backend();
-    </script>
   </body>
 </html>
