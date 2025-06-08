@@ -2,7 +2,6 @@ backend:
   name: github
   repo: razojhameas/personal-website
   branch: main
-  auth_type: pkce
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
