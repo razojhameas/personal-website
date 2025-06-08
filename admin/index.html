@@ -9,5 +9,10 @@
   </head>
   <body>
     <div id="nc-root"></div>
+    <script>
+      if (window.Auth0Backend) {
+        window.CMS.registerBackend('auth0', window.Auth0Backend);
+      }
+    </script>
   </body>
 </html>
