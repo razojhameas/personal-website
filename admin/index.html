@@ -4,7 +4,17 @@
     <meta charset="utf-8" />
     <title>Content Manager</title>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/@decap-cms/auth0-backend@^2.0.0/dist/auth0-backend.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.css" />
   </head>
   <body>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+      window.addEventListener('DOMContentLoaded', function() {
+        window.CMS.init();
+      });
+    </script>
+    <script src="config.yml" type="text/yaml"></script>
+    <div id="nc-root"></div>
   </body>
 </html>
