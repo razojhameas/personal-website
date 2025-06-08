@@ -2,6 +2,10 @@ backend:
   name: github
   repo: razojhameas/personal-website
   branch: main
+  auth_type: pkce
+  client_id: tupovKBYfxpO7ZgvCN5FNgt6YFodUzRm
+  base_url: https://jhrazowebsite.netlify.app
+  auth_endpoint: https://dev-e7qege5wf8kpx5rm.us.auth0.com/authorize
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
