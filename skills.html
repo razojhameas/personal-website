@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Education | Jhames Rianne G. Razo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html" class="active">Skills & Education</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <div class="education-header" onclick="toggleDropdown(this)">
+                        Elementary Diploma (2014)
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="education-content">
+                        <strong>School:</strong> Lucena West I Elementary School<br>
+                        <strong>Honors:</strong> Graduated with High Honors<br>
+                        <a class="map-link" href="https://maps.app.goo.gl/DMCxo2bPJxUP6PA29" target="_blank">View on Google Maps</a>
+                    </div>
+                </li>
+                <li class="education-item">
+                    <div class="education-header" onclick="toggleDropdown(this)">
+                        Junior High Diploma (2020)
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="education-content">
+                        <strong>School:</strong> Quezon National High School<br>
+                        <strong>Honors:</strong> Graduated with Highest Honors<br>
+                        <strong>Program:</strong> Science, Technology, Engineering (STE) Program<br>
+                        <a class="map-link" href="https://maps.app.goo.gl/FKzd3KHenT13TjgE7" target="_blank">View on Google Maps</a>
+                    </div>
+                </li>
+                <li class="education-item">
+                    <div class="education-header" onclick="toggleDropdown(this)">
+                        Senior High Diploma (2024, in progress)
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="education-content">
+                        <strong>School:</strong> Quezon National High School<br>
+                        <strong>Status:</strong> Working towards completion<br>
+                        <strong>Strand:</strong> STEM (Science, Technology, Engineering, and Mathematics)<br>
+                        <a class="map-link" href="https://maps.app.goo.gl/FKzd3KHenT13TjgE7" target="_blank">View on Google Maps</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Data Analysis</li>
+                <li>Adaptable</li>
+                <li>Proofreading</li>
+                <li>Self-Motivation</li>
+                <li>Programming</li>
+                <li>Compliant</li>
+                <li>Organization</li>
+                <li>Active Listener</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+    function toggleDropdown(header) {
+        const item = header.parentElement;
+        item.classList.toggle('open');
+    }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Jhames Rianne G. Razo
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | Jhames Rianne G. Razo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="achievements.html" class="active">Achievements</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills & Education</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <!-- 2025 -->
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        MathNIK Math Quiz Bee [Champion] - 2025
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/mathinik.jpg" alt="MathNIK Math Quiz Bee">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        2nd National AMA Brains Olympiad I.T. Edition [Champion] - 2025
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/ama.jpg" alt="AMA Brains Olympiad">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        National PhilMath Numerical Test [Gold] - 2025
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/philmath-num-2025-placeholder.png" alt="PhilMath Numerical Test 2025">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        National PhilMath Analytical Test [Silver] - 2025
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/philmath-analytical-2025-placeholder.png" alt="PhilMath Analytical Test 2025">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        PSA National Statistics Quiz Bee [Finalist] - 2025
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/psa-placeholder.png" alt="PSA National Statistics Quiz Bee">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        BatStateU STEM-A-THON [Finalist] - 2025
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/batstateu-placeholder.png" alt="BatStateU STEM-A-THON">
+                    </div>
+                </li>
+                <!-- 2024 -->
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        National PhilMath Numerical Test [Gold] - 2024
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/philmath-num-2024-placeholder.png" alt="PhilMath Numerical Test 2024">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        U.P. Tagisan Quiz Bee [Semi-Finalist] - 2024
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/up-tagisan-placeholder.png" alt="U.P. Tagisan Quiz Bee">
+                    </div>
+                </li>
+                <!-- 2023 -->
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        National DOST-SEI Indie-Siyensya [Finalist] - 2023
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/indie-siyensiya.jpg" alt="DOST-SEI Indie-Siyensya">
+                    </div>
+                </li>
+                <li class="achievement-item">
+                    <div class="achievement-header" onclick="toggleDropdown(this)">
+                        National YSC Case Study [Finalist] - 2023
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="achievement-content">
+                        <img src="assets/achievements/ysc.jpg" alt="YSC Case Study">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+    function toggleDropdown(header) {
+        const item = header.parentElement;
+        item.classList.toggle('open');
+    }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Jhames Rianne G. Razo
+        </div>
+    </footer>
+</body>
+</html>

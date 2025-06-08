@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jhames Rianne G. Razo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="skills.html">Skills & Education</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Projects & Experiences</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleDropdown(this)">
+                        ExDaTriM (2024)
+                        <span class="flair flair-mono completed">Completed</span>
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="project-content">
+                        <img src="assets/projects/exdatrim.JPG" alt="ExDaTriM" class="expandable-img">
+                        <p><strong>Expiration Date Tracker and Inventory Management Application for Sari-Sari Stores.</strong><br>
+                        A mobile app designed to help small business owners efficiently track inventory and monitor product expiration dates, reducing waste and improving store management. Built with React Native and JavaScript for cross-platform deployment.</p>
+                        <a class="github-link" href="https://github.com/razojhameas/exdatrim" target="_blank">View on GitHub</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleDropdown(this)">
+                        LitReview (2023)
+                        <span class="flair flair-mono completed">Completed</span>
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="project-content">
+                        <img src="assets/projects/litreview.JPG" alt="LitReview" class="expandable-img">
+                        <p><strong>Interactive Literature Review Platform for Students and Readers.</strong><br>
+                        A web application created as a school project, allowing users to submit and browse reviews on various literary works. Designed to foster a collaborative environment for sharing insights and recommendations on literature.</p>
+                        <a class="github-link" href="https://github.com/razojhameas/litreview1" target="_blank">View on GitHub</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleDropdown(this)">
+                        CogniView
+                        <span class="flair flair-mono completed">Completed</span>
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="project-content">
+                        <img src="assets/projects/cogniview.JPG" alt="CogniView" class="expandable-img">
+                        <p><strong>AI-Assisted Chrome Extension for Fact-Checking and Information Gathering.</strong><br>
+                        An innovative browser extension that leverages AI to help users gather reliable information and fact-check content, aiming to reduce the impact of algorithmic bias and misinformation online.</p>
+                        <a class="github-link" href="https://github.com/razojhameas/cogniview" target="_blank">View on GitHub</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleDropdown(this)">
+                        AquaGuard
+                        <span class="flair flair-mono in-progress">In Progress</span>
+                        <span class="dropdown-icon">&#9654;</span>
+                    </div>
+                    <div class="project-content">
+                        <img src="assets/projects/aquaguard-placeholder.png" alt="AquaGuard" class="expandable-img">
+                        <p><strong>Smart Aquaculture Companion Application.</strong><br>
+                        A companion app for a water quality monitoring, automated feeding, and ultrasonic algae cleaning system. Designed to help aquaculture practitioners maintain optimal conditions and automate routine tasks for healthier aquatic environments.</p>
+                        <a class="github-link" href="https://github.com/razojhameas/exdatrim" target="_blank">View on GitHub</a>
+                    </div>
+                </li>
+                <!-- Add more projects as needed, using the same structure -->
+            </ul>
+        </section>
+    </main>
+    <script>
+    function toggleDropdown(header) {
+        const item = header.parentElement;
+        item.classList.toggle('open');
+    }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Jhames Rianne G. Razo
+        </div>
+    </footer>
+</body>
+</html>
