@@ -3,16 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script src="https://unpkg.com/@decap-cms/auth0-backend@^2.0.0/dist/auth0-backend.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.css" />
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.css" />
   </head>
   <body>
+    <div style="color: red; font-size: 1.5em; text-align: center; margin-top: 2em;">TEST: admin/index.html loaded</div>
     <div id="nc-root"></div>
-    <script>
-      if (window.Auth0Backend) {
-        window.CMS.registerBackend('auth0', window.Auth0Backend);
-      }
-    </script>
   </body>
 </html>
