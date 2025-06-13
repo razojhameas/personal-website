@@ -7,26 +7,12 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "test"
+    label: "Test Collection"
     files:
-      - label: "About"
-        name: "about"
-        file: "about.html"
+      - label: "Test Page"
+        name: "test-page"
+        file: "test.md"
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Projects"
-        name: "projects"
-        file: "projects.html"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Achievements"
-        name: "achievements"
-        file: "achievements.html"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Skills"
-        name: "skills"
-        file: "skills.html"
-        fields:
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }

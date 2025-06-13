@@ -44,6 +44,11 @@ body {
     border: 2px solid var(--border);
     box-shadow: 0 2px 12px rgba(0,0,0,0.10);
     background: var(--accent-dark);
+    transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+}
+.profile-pic:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
 
 .name {
@@ -51,6 +56,14 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0 0 0.5rem 0;
+    transition: opacity 0.25s cubic-bezier(.4,2,.6,1), transform 0.25s cubic-bezier(.4,2,.6,1);
+    opacity: 1;
+    transform: translateY(0);
+}
+.name[style*="display:none"] {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.25s cubic-bezier(.4,2,.6,1), transform 0.25s cubic-bezier(.4,2,.6,1);
 }
 
 .social-links {
@@ -83,11 +96,12 @@ body {
     letter-spacing: 0.5px;
     padding: 0.2rem 0.5rem;
     border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1);
 }
 .main-nav a.active, .main-nav a:hover {
     background: var(--accent-dark);
     color: var(--accent);
+    transform: scale(1.08);
 }
 
 section {
@@ -149,6 +163,10 @@ li {
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+    transition: transform 0.32s cubic-bezier(.4,2,.6,1);
+}
+.skills-list li:hover {
+    transform: scale(1.04);
 }
 
 .footer {
@@ -344,6 +362,31 @@ li {
 /* Center headings on all pages */
 section > h2, section > h3 {
     text-align: center;
+}
+
+/* Fade-in animation for main sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+section, .intro {
+    animation: fadeInUp 0.8s cubic-bezier(.4,2,.6,1);
+}
+
+/* Centered project title above image */
+.project-title-centered {
+    text-align: center;
+    margin: 0 0 0.7rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.5px;
 }
 
 @media (max-width: 900px) {

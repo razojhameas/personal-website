@@ -10,8 +10,18 @@
 <body>
     <header class="main-header">
         <div class="container">
+            <div class="profile-pic-wrapper">
+                <img src="assets/profile.png" alt="Profile" class="profile-pic" id="profilePic">
+            </div>
+            <h1 class="name" id="pageName" style="display:none;">Jhames Rianne G. Razo</h1>
+            <div class="social-links">
+                <a href="tel:+639934052806" target="_blank" aria-label="Phone"><img src="assets/phone.svg" alt="Phone"></a>
+                <a href="mailto:razojhames8@gmail.com" target="_blank" aria-label="Email"><img src="assets/email.svg" alt="Email"></a>
+                <a href="https://github.com/razojhameas" target="_blank" aria-label="GitHub"><img src="assets/github.svg" alt="GitHub"></a>
+                <a href="https://www.facebook.com/jhames.razo" target="_blank" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/jhames-rianne-g-razo-2b32a6316/" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+            </div>
             <nav class="main-nav">
-                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="achievements.html" class="active">Achievements</a>
                 <a href="projects.html">Projects</a>
@@ -124,6 +134,19 @@
         const item = header.parentElement;
         item.classList.toggle('open');
     }
+
+    const profilePic = document.getElementById('profilePic');
+    const pageName = document.getElementById('pageName');
+    profilePic.addEventListener('click', function() {
+        if (pageName.style.display === 'none') {
+            pageName.style.display = 'block';
+            pageName.style.opacity = 0;
+            setTimeout(() => { pageName.style.opacity = 1; }, 10);
+        } else {
+            pageName.style.opacity = 0;
+            setTimeout(() => { pageName.style.display = 'none'; }, 200);
+        }
+    });
     </script>
     <footer class="footer">
         <div class="container">
